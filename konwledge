@@ -1,6 +1,6 @@
-'DONT REPEAT YOURSELF'
+dry === 'DONT REPEAT YOURSELF'
 
-Insteadt of:
+Instead of:
 
 document.querySelector('.message').textContent = 'blablabla';
 document.querySelector('.message').textContent = 'blablablabla';
