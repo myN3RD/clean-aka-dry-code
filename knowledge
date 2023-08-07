@@ -1,0 +1,25 @@
+dry === 'DONT REPEAT YOURSELF'
+
+Instead of:
+
+document.querySelector('.message').textContent = 'blablabla';
+document.querySelector('.message').textContent = 'blablablabla';
+
+-> we can write a function and use the function instead.
+
+
+
+
+const displayMessage = function (message) {
+  document.querySelector('.message').textContent = message;
+};
+
+
+  // when there is no input
+  if (!guess) {
+    // using the cleaner code function
+    displayMessage('⛔️ No Number!');                                         // using the function
+    // when player wins
+  } else if (guess === secretNumber) {
+    displayMessage('🎉 Correct number');                                     // using the function
+    document.querySelector('.number').textContent = secretNumber;
